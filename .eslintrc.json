@@ -48,7 +48,7 @@
       }
     ],
     "no-console": 0,
-    "import/prefer-default-export": 1,
+    "import/prefer-default-export": 0,
     "import": 0,
     "func-names": 0,
     "space-before-function-paren": 0,
@@ -88,9 +88,12 @@
     "prettier/prettier": [
       "error",
       {
+        "endOfLine":"auto",
         "trailingComma": "none",
         "singleQuote": true,
-        "printWidth": 100
+        "printWidth": 100,
+        "tabWidth": 2,
+        "useTabs": false
       }
     ],
     "jsx-a11y/href-no-hash": "off",
