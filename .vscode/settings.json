@@ -9,5 +9,9 @@
 "eslint.alwaysShowStatus": true,
 "editor.quickSuggestions": {
   "strings": true
-}
+},
+  "emmet.includeLanguages": {
+     "javascript": "javascriptreact"
+  },
+  "tailwindCSS.emmetCompletions": true
 }
