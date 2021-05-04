@@ -1,16 +1,20 @@
+/* eslint-disable no-plusplus */
+import { useState } from 'react';
 import UseUser from '../../hooks/use-user';
 import User from './user';
 import Suggestions from './suggestions';
 
 export default function Sidebar() {
   const {
-    user: { fullName, userName, userId }
+    user: { fullName, username, userId, following }
   } = UseUser();
 
   return (
     <div className="p-4">
-      <User userName={userName} fullName={fullName} />
-      <Suggestions userId={userId} />
+      <User username={username} fullName={fullName} />
+      <Suggestions userId={userId} following={following} />
     </div>
   );
 }
+
+Sidebar.whyDidYouRender = true;
