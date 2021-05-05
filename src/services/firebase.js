@@ -32,3 +32,20 @@ export async function getSuggestedProfiles(userId, following) {
 
   return profiles;
 }
+
+export async function setFollowingUser(loggedInUserDocId, followingId) {
+  const userRef = firebase.firestore().collection('users').doc(loggedInUserDocId);
+  userRef.update({
+    following: FieldValue.arrayUnion(followingId)
+  });
+
+  return false;
+}
+
+export async function setFollowedUser(userId, followedId) {
+  const userRef = firebase.firestore().collection('users').doc(userId);
+  userRef.update({
+    followers: FieldValue.arrayUnion(followedId)
+  });
+  return false;
+}
