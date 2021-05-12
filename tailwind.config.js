@@ -2,6 +2,10 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true
   },
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.js', './src/**/**/*.js']
+  },
   theme: {
     fill: (theme) => ({
       red: theme('colors.red.primary')
@@ -13,7 +17,7 @@ module.exports = {
       },
       black: {
         light: '#262626',
-        faded: '#000059'
+        faded: '#00000059'
       },
       red: {
         primary: '#ed4956'
@@ -24,5 +28,8 @@ module.exports = {
         primary: '#dbdbdb'
       }
     }
+  },
+  variants: {
+    display: ['group-hover']
   }
 };

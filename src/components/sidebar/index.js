@@ -1,5 +1,3 @@
-/* eslint-disable no-plusplus */
-import { useState } from 'react';
 import UseUser from '../../hooks/use-user';
 import User from './user';
 import Suggestions from './suggestions';

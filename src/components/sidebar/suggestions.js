@@ -1,7 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import { getSuggestedProfiles } from '../../services/firebase';
 import SuggestedProfile from './suggested-profile';
@@ -36,7 +35,7 @@ export default function Suggestions({ loggedInUserDocId, userId, following }) {
         {profiles.map((profile) => (
           <SuggestedProfile
             key={profile.docId}
-            userDocId={profile.docId}
+            spDocId={profile.docId}
             username={profile.username}
             profileId={profile.userId}
             userId={userId}

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Header from '../components/header';
 
 export default function NotFound() {
   useEffect(() => {
@@ -6,7 +7,8 @@ export default function NotFound() {
   }, []);
   return (
     <div className="bg-gray-background">
-      <div className="mx-auth max-w-screen-lg">
+      <Header />
+      <div className="mx-auth max-w-screen-2xl">
         <p className="text-center text-2xl">Not Found!</p>
       </div>
     </div>
