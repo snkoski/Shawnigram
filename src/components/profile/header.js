@@ -9,8 +9,8 @@ export default function Header({
     docId: profileDocId,
     userId: profileUserId,
     fullName: profileFullName,
-    followers: profileFollowers = [],
-    following: profileFollowing = [],
+    followers: profileFollowers,
+    following: profileFollowing,
     username: profileUsername
   },
   photoCount,
